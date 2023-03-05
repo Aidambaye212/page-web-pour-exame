@@ -1,0 +1,769 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}body{
+    background: whitesmoke;
+}
+
+section{
+    padding:2rem 7%;
+}
+
+/*barre de navigation*/
+.heading{
+    text-align: center;
+    color:#010103;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+
+.heading span{
+    color:rgb(194, 146, 154);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: rgb(194, 146, 154);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header{
+    background: rgb(194, 146, 154);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.9rem 7%;
+    border-bottom: .1rem solid rgba(255,255,255,.3);
+    position: fixed;
+    top:0; 
+    left: 0; 
+    right: 0;
+    height: 10%;
+}
+
+.header .logo {
+    height: 4rem;
+    color: black;
+    font-family: sans-serif;
+    font-size: 4rem;
+    margin-left: -4%;
+    cursor: pointer;
+    margin-top: -1%;
+}
+
+.navbar{
+    margin-left: -10%;
+    margin-right: 10%;
+
+}
+.header .navbar a{
+    margin:1rem;
+    font-size: 2rem;
+    color:#fff;
+    padding-left:2 4rem;
+}
+
+.header .navbar a:hover{
+    color:black;
+    border-bottom: .1rem solid black;
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: -5rem;
+    padding: 3.5rem;
+}
+.header .icons{
+    margin-right: -7.5%;
+}
+.header .icons  div:hover{
+    color:black;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    right: 13%;
+    background: #fff;
+    width: 20rem;
+    height: 4rem;
+    display: flex;
+    align-items: center; 
+    transform-origin: top;
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color:black;
+    padding:1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color:black;
+}
+
+.header .search-form label:hover{
+    color: rgb(194, 146, 154);
+}
+
+.header .cart-items-container{
+    position: absolute;
+    right: -100%;
+    width: 35rem;
+    background: #fff;
+    padding:0 1.5rem;
+}
+
+.header .cart-items-container .cart-item{
+    position: relative;
+    margin:2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top:1rem; 
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+.header .cart-items-container .cart-item .fa-times:hover{
+    color:rgb(194, 146, 154);
+}
+
+.header .cart-items-container .cart-item img{
+    height: 14rem;
+}
+
+.header .cart-items-container .cart-item .content h3{
+    font-size: 2rem;
+    color: black;
+    padding-bottom: .5rem;
+}
+
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color:rgb(194, 146, 154);
+}
+
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+}
+
+/*Fin de la barre de navigation*/
+/******************Photos d'entete*******************/
+
+.btn-2{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#13131a;
+    background: rgb(194, 146, 154);
+    cursor: pointer;
+    border: .1rem solid black;
+}
+
+.btn-2:hover{
+    letter-spacing: .5rem;
+}
+.txt{
+	position:absolute;
+	color: #13131a solid;
+	letter-spacing: 0.2px;
+	line-height: 35px;
+	left: 6%;
+  	margin-top: 20%;
+}
+.txt h1{
+	color:  rgb(128, 112, 114); 
+	font-size: 50px;
+	margin-bottom: 20px;
+    font-weight: bold;
+}
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.myfade .img{
+    width: 100%;
+    height: 70rem;
+}
+.myfade{
+    position:inherit;
+}
+/******************Photos d'entete*******************/
+
+/******************menu*******************/
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:5.5rem;
+}
+
+.menu .box-container .box{
+    padding:5rem;
+    border:.1rem solid black;  
+    padding-bottom: 2rem;
+}
+
+.menu .box-container .box img{
+    height: 42rem;
+    margin-left: -5%;
+    margin-top: -5%;
+}
+.life{
+    color: rgb(59, 58, 58);
+    padding:1rem 0;
+    font-weight: bold;
+	font-size: 19px;
+    margin-bottom: 2%;
+    margin-top: -1.5%;
+}
+.menu .box-container .box h3{
+    color: #13131a;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: goldenrod;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+.menu .box-container .box .price:hover{
+    color: goldenrod;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+    color: red;
+}
+
+.menu .box-container .box:hover{
+    background:rgb(194, 146, 154);
+}
+.btn-1{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: rgb(194, 146, 154);
+    cursor: pointer;
+    border: .1rem solid black;
+}
+
+.btn-1:hover{
+    letter-spacing: .2rem;
+    color:black;
+    background: #f1f1f1;
+}
+
+/*menu*/
+
+/*product*/
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:4.5rem;
+}
+
+.products .box-container .box{
+    text-align: center;
+    border:.1rem solid black;
+    padding: rem;
+}
+
+.products .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border:.1rem solid black;
+    color:#13131a;
+    margin:.3rem;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+
+.products .box-container .box .icons a:hover{
+    background:rgb(194, 146, 154);
+}
+
+.products .box-container .box .image{
+    padding: 3.5rem 0;
+}
+
+.products .box-container .box .image img{
+    height: 45rem;
+}
+.products .box-container .box .content h3{
+    color:#13131a;
+    font-size: 2.5rem;
+}
+
+.products .box-container .box .content .stars{
+    padding: 1.5rem;
+}
+
+.products .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: rgb(194, 146, 154);
+}
+
+.products .box-container .box .content .price{
+    color: #13131a;;
+    font-size: 2.5rem;
+    color: goldenrod;
+}
+
+.products .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: red;
+}
+/*product*/
+
+/*Burkini*/
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:5.5rem;
+}
+
+.menu .box-container .box-1{
+    padding:5rem;
+    text-align: center;
+    border:.1rem solid black;    
+}
+
+.menu .box-container .box-1 img{
+    height: 39rem;
+    margin-left: -3%;
+    margin-top: -8%;
+    cursor: pointer;
+}
+.menu .box-container .box-1:hover img{
+    height: 43rem;
+    margin-left: -6%;
+    margin-top: -8%;
+}
+
+.menu .box-container .box-1 h3{
+    color: #13131a;
+    font-size: 2rem;
+    padding:1rem 0;
+    margin-top: 1.5%;
+}
+
+.menu .box-container .box-1 .price{
+    color: goldenrod;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+.menu .box-container .box-1 .price:hover{
+    color: goldenrod;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box-1 .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: rgb(194, 146, 154);
+    cursor: pointer;
+    border: .1rem solid black;
+    margin-left: 2rem;
+}
+
+.menu .box-container .box-1 .btn:hover{
+    letter-spacing: .2rem;
+    color:black;
+}
+
+/*Fin Burkini*/
+
+/*à propos de nous*/
+
+.heading-1{
+    text-align: center;
+    color:#010103;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    margin-top: -8%;
+}
+
+.heading-1 span{
+    color:rgb(194, 146, 154);
+    text-transform: uppercase;
+}
+
+.about{
+   min-height: 80vh;
+    background:url(https://www.chicandmodesty.com/10726-home_default/hijab-luxe-mousseline-beige-clair.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 7%;
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+    height: 10%;
+}
+
+
+.about .row .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.5;
+    padding:1rem 0;
+    color:black;
+    position: center;
+}
+.about .row .content p span{
+    color:rgb(194, 146, 154);
+    text-transform: uppercase;
+}
+/*contact*/
+.contact .row{
+    display: flex;
+    background:#13131a;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #13131a;
+    border:.1rem solid rgba(255,255,255,.3);
+}
+
+.contact .row form .inputBox span{
+    color:#fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background:none;
+}
+/*----------------------------------------------------contact ends-----------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------footer-----------------------------------------------------*/
+.footer{
+    background-color: #13131a;
+    padding: 70px 0;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: ' ' ;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:rgb(194, 146, 154);
+    height: 2px;
+    box-sizing: border-box;
+    width: 70px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: o 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+
+/*----------------------------------------------------Fin  footer-----------------------------------------------------*/
+/** page contact**/
+
+.contact-menu a{
+	color: black;
+	text-decoration: none;
+	font-size: 1.5em;
+	padding: 15px;
+	border: 1px solid black;
+	background-color: gray;
+}
+.contact-menu a:hover{
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	border-radius: 5px 5px 0 0;
+	background-color: rgb(194, 146, 154);
+	box-shadow: -1px -1px 20px -1px white; 
+}
+.SX{
+	font-size: 2.2em;
+	margin-left: -75%;
+    color: white;
+}
+.me{
+	font-size: 2.2em;
+	margin-left: -15%;
+    color: white;
+}
+.pay{
+	font-size: 1.9em;
+	margin-left: -55%;
+    
+}
+.row form a{
+    margin-left: -3% ;
+}
+/** fin page contact**/
+
+/**page d'information**/
+.hidjabb{
+	padding-left: 200px;
+}
+.ssms{
+    display: flex;
+    margin-top: 19%;
+    margin-bottom: -40%
+}
+.ssms img{
+    height: 60%;
+    margin-top: -20%;
+    margin-bottom: 90%;
+    margin-left: -10%;
+}
+.content .stars{
+    color: rgb(194, 146, 154);
+    font-size: 3rem;
+}
+
+.information{
+	padding-left: 25px;
+    margin-top: -8%;
+}
+.rassoul{
+	font-size: 4em;
+	margin-bottom: 5px;
+}
+.labe{
+	padding-top:1.5em;
+    font-size: 1.8rem;
+    font-family:  arial;
+}
+.ssms .imagesimi img{
+    width:50px;
+    height: 20%;
+}
+
+.quantité{
+	padding-top: 10px;
+}
+.quantité input{
+ 	width: 100px;
+	text-align: center;
+	height: 25px;
+	border-radius: 8px;
+	border: 1px solid black;
+}
+.btn{
+	border: 1px solid black;
+	border-radius: 8px;
+	margin-left: 120px;
+	margin-top: 10px;
+}
+
+.product .minibox-container .box{
+    text-align: inline ;
+}
+
+.product .minibox-container .box .image{
+    padding: 0 2.5rem;
+}
+
+.product .minibox-container .box .image img{
+    height: 17rem;
+    margin-bottom: -4%;
+    margin-top: 4%;
+    padding: 2.4rem;
+    margin-left: -12%;
+}
+
+/** fin page d'information**/
+/* partie panier */
+
+.containe {
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    background-color: whitesmoke;
+    margin-top: 10%;
+}
+.containe img{ 
+    margin-left: 32%;
+    margin-top: -7%;
+    width: 35%;
+} 
+.panier_vide {
+    color: #c5c5c5;
+    font-size: 30px;
+    margin-left: 32%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+
+}
+.compte1{
+    text-decoration: none;
+}
+.compte1:hover{
+	text-decoration: underline;
+}
+.compte{
+    color: #202020;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: -19%;
+}
+.containe .btn{
+    margin-bottom: 4%;
+    margin-left: 41%;
+
+}
+.paye-containe{
+    width: 100%;
+    height: 20%;
+}
+.paye-containe .payement img{
+    width: 12%;
+}
+.paye-containe .payement a{
+    padding: 2rem;
+}
